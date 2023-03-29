@@ -1,13 +1,116 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: SBAB, Circular, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica Neue, Arial, Noto Sans, "sans-serif";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.per-month {
+  margin-bottom: 8vh;
+  width: 50vh;
+}
+input,
+select {
+  display: block;
+  padding: 1vh;
+  margin-bottom: 5vh;
+  margin-top: 1vh;
+  width: 50vh;
+}
+select {
+  width: 52vh;
+}
+label {
+  font-size: 14px;
+}
+.form-wrapper label {
+  padding-bottom: 10vh;
+}
+.hr {
+  width: 90vh;
+  border-color: rgba(239, 242, 245, 0.428);
+}
+.percentage,
+.compare {
+  float: right;
+}
+.percentage {
+  margin-top: -25vh;
+}
+.compare {
+  margin-top: -18vh;
+}
+.direct {
+  font-size: 30px;
+}
+h1,
+h2 {
+  font-weight: normal;
+}
+h1 {
+  font-size: 45px;
+}
+.direct {
+  font-size: 23px;
+}
+.label {
+  font-size: 8px;
+}
+img {
+  margin-left: -20vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* --- Responsiveness for Iphone SE  --- */
+@media screen and (max-width: 667px) {
+
+
+  body {
+    margin-left: 10%;
+  }
+  .hr {
+    width: 50vh;
+    margin-left: -4%;
+    border-color: rgba(239, 242, 245, 0.428);
+  }
+  .percentage {
+    display: none;
+  }
+  .compare img {
+    margin-left: -35vh;
+    margin-top: -35vh;
+  }
+  .month {
+    margin-top: 25vh;
+  }
+  input {
+    width: 45vh;
+  }
+  select {
+    width: 47vh;
+  }
+  input,
+  select {
+    margin-left: -1vh;
+  }
+  label {
+    font-size: 12px;
+    margin-left: -1vh;
+  }
+  .direct {
+    font-size: 18px;
+  }
+  .per-month {
+    width: 80%;
+  }
+  h1,
+  h2 {
+    font-weight: normal;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .per-month {
+    margin-top: -2vh;
+  }
 }
